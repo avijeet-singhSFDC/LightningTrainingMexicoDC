@@ -2,6 +2,14 @@
    <head>  
      <!-- CUSTOM GENERATED STYLE SHEET -->  
       <apex:slds/>
+       <style>
+           .slds-form-element{
+            width:50%;
+           }
+           .textarea{
+            width:100%;
+           }
+       </style>
    </head>   
    <body>      
      <!-- REQUIRED SLDS WRAPPER - CUSTOM SCOPING CLASS USED WHEN GENERATING CUSTOM CSS -->  
@@ -49,7 +57,7 @@
                </div>  
                <!-- ADD ROW -->  
                <div class="slds-form-element__row">  
-                 <div class="slds-form-element">  
+                 <div class="slds-form-element textarea">  
                    <apex:outputLabel styleClass="slds-form-element__label">Shipping Street</apex:outputLabel>  
                    <apex:inputTextarea value="{!acc.ShippingStreet}" styleClass="slds-form-element__control slds-textarea"/>  
                  </div>  
